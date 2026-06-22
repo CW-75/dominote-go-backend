@@ -2,8 +2,6 @@
 
 ¡Gracias por tu interés en colaborar! Este proyecto se mantiene gracias al esfuerzo de personas como tú. Para asegurar una experiencia de colaboración fluida y eficiente, por favor lee y sigue estas directrices antes de enviar tu contribución.
 
-
-
 ## 1. Código de Conducta
 
 Al participar en este proyecto, te comprometes a mantener un ambiente respetuoso, inclusivo y libre de acoso.
