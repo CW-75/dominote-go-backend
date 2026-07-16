@@ -41,6 +41,14 @@
    - Implement health check endpoints (`/healthz` for Liveness, `/readyz` for Readiness).
    - Handle Graceful Shutdown by capturing OS signals (`SIGTERM`, `SIGINT`) to flush pending event buffers and drain DB connections cleanly before the Pod terminates.
 
+## 🎯 Feature-Driven Development (FDD)
+1. **Domain Object Modeling:** The first step for any new feature is modeling the domain objects. Features must be based on a clear and robust domain model.
+2. **Feature Lists:** Break down requirements into small, client-valued features. Use the format: `<action> the <result> <by|for|of|to> a(n) <object>` (e.g., "Calculate the total score of a game table").
+3. **Plan by Feature:** Group features together and plan their iterative development based on dependencies.
+4. **Design & Build by Feature:**
+   - **Design:** Define the exact structs, interfaces, and methods required for the feature before coding.
+   - **Build:** Implement the code, write unit tests, and perform continuous integration. Avoid long-lived development branches; code should be integrated as soon as the feature is complete and tested.
+
 ## 🤖 Agent Session Continuity (AGENTS.md)
 1. **End-of-Session Protocol:** When the user indicates a chat session is ending, wrapping up, or switching contexts, the AI **MUST** write or append a summary to a file named `AGENTS.md` in the root directory.
 2. **`AGENTS.md` Structure:** The AI must update the file using the following schema:
